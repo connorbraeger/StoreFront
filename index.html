@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Store Front</title>
     <link rel = "stylesheet" type = "text/css" href= "main.css">
+    <script src = "script.js" type = "text/javascript"></script>
+
 
 </head>
 <body>
@@ -22,7 +24,99 @@
     </header>
     <!--Nav Bar Donation Links, History-->
     <!--Search Container-->
+    <section id = "searchContainer">
+        <h2>Filter</h2>
+       <div class = "dropdown">
+           <button onclick="myFunction('DropDown1')" class = "dropbtn">Age</button>
+           <div id ="DropDown1" class = "dropdown-content">
+               <a href = "#kitten">Kitten</a>
+               <a href = "#adult">Adult</a>
+               <a href = "#senior">Senior</a>
+           </div>
+           <button onclick="myFunction('DropDown2')" class = "dropbtn">Breed</button>
+           <div id ="DropDown2" class = "dropdown-content">
+               <a href = "#kitten">Tuxedo</a>
+               <a href = "#adult">Tabby</a>
+               <a href = "#senior">Siamese</a>
+           </div>
+           <button onclick="myFunction('DropDown3')" class = "dropbtn">Coat Length</button>
+           <div id ="DropDown3" class = "dropdown-content">
+               <a href = "#kitten">Short</a>
+               <a href = "#adult">Medium</a>
+               <a href = "#senior">Long</a>
+           </div>
+        <input type = "search" placeholder="search" class = "dropbtn">   
+       </div>
+    </section>
     <!--Main -->
+    <section id ="main" class = "contentWrapper">
+       <h1> Cats Just Wanting a Good Home</h1>
+       <div class = "card">
+           <img src = "./assets/tuxedo.webp" class = "catType" alt = "cat"/>
+           <h2>Whiskers</h2>
+           <p>Adult • Tuxedo</p>
+           <p>1 mile away</p>    
+       </div>
+       
+       <div class = "card">
+           <img src = "./assets/Capture.PNG" class = "catType" alt = "cat"/>
+           <h2>Lainey</h2>
+           <p>Senior • Tabby</p>
+           <p>1 mile away</p>
+       </div>
+       
+       <div class = "card">
+           <img src = "./assets/calico.webp" class = "catType" alt = "cat"/>
+           <h2>Mittens</h2>
+           <p>Kitten • Calico</p>
+           <p>1 mile away</p>
+       </div>
+       
+       <div class = "card">
+           <img src = "./assets/MaineCoon.png" class = "catType" alt = "cat"/>
+           <h2>Leo</h2>
+           <p>Senior • Maine Coon</p>
+           <p>1 mile away</p>
+       </div>
+       
+       <div class = "card">
+           <img src = "./assets/domestic.jpg" class = "catType" alt = "cat"/>
+           <h2>Ronald</h2>
+           <p>Adult • Domestic Short Hair</p>
+           <p>2 miles away</p>
+       </div>
+      
+       <div class = "card">
+           <img src = "./assets/tort.jpg" class = "catType" alt = "cat"/>
+           <h2>Zelda</h2>
+           <p>Adult • Tortoiseshell</p>
+           <p>5 mile away</p>
+       </div>
+
+    </section>
+
     <!--Foooter-->
+    <div class = "trick">
+    <footer>
+        <div class = "social">
+            <ul id = "socialFooter">
+                <li><a href = '#'><img src = "./assets/facebook_20.png" alt = "Facebook" border ="0" class ="socialIcon"></a></li>
+                <li><a href = '#'><img src = "./assets/twitter_20.png" alt = "Twitter" border = "0" class = "socialIcon"></a></li>
+                <li><a href = '#'><img src = "./assets/instagram.webp" alt = "Instagram" border ="0" class ="socialIcon"></a></li>
+                
+            </ul> 
+            <h2>Please Follow Us on Social Media</h2>
+    </div>  
+    <div class = "Legal">
+        <span>&copy;2020</span>
+        <ul id ="menuFooter">
+            <li><a href='#'>Sitemap</a></li>
+            <li><a href = '#'>Privacy</a></li>
+            <li><a href = '#'>Terms of Use</a></li>
+            <li>Website by Connor</li>
+        </ul>
+    </div>
+    </footer>
+</div>
 </body>
 </html>
